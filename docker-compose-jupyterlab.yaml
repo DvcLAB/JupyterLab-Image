@@ -1,0 +1,20 @@
+version: "3"
+services:
+    jupyterlab:
+        image:
+            jupyterlab:tf2.2
+        container_name: jupyterlab
+        ports:
+          - "8988:8988"
+        env_file: /opt/variable.env
+        privileged: true
+        cpuset: "0"
+        tty: true
+        environment:
+                - NVIDIA_VISIBLE_DEVICES=all
+                - NVIDIA_DRIVER_CAPABILITIES=all
+        entrypoint: /opt/init_container.sh
+        deploy:
+            resources:
+                limits:
+                    memory: "2G"
