@@ -32,18 +32,16 @@ JupyterLab是一个交互式的开发环境，是Jupyter Notebook的下一代产
 
 ### 打开JupyterLab
 
-1. 登录ModelArts管理控制台，在左侧菜单栏中选择**“开发环境 > Notebook”**，进入Notebook管理列表。
-2. 选择状态为**“运行中”**的Notebook实例，单击操作列的“打开”访问Notebook。
+1. 通过docker-compose启动JupyterLab镜像
+2. 访问对应网址，进行身份认证后进入JupyterLab环境
 3. 进入JupyterLab页面后，自动打开Launcher页面，如下图所示。您可以使用开源支持的所有功能，详细操作指导可参见JupyterLab官网文档。
    ![点击放大](C:\Users\22952\AppData\Roaming\Typora\typora-user-images\image-20210118194239087.png)
 
 ### 新建并打开Notebook
 
-进入JupyterLab主页后，可在“Notebook”区域下，选择适用的AI引擎，单击后将新建一个对应框架的Notebook文件。
+进入JupyterLab主页后，可在“Notebook”区域下，选择创建Notebook，单击后将新建一个对应框架的Notebook文件。
 
-由于每个Notebook实例选择的工作环境不同，其支持的AI框架也不同，下图仅为示例，请根据实际显示界面选择AI框架，ModelArts支持的所有框架版本及Python版本请参见[支持的AI引擎](https://support.huaweicloud.com/engineers-modelarts/modelarts_23_0033.html#modelarts_23_0033__section191109611479)。
-
-![点击放大](C:\Users\22952\AppData\Roaming\Typora\typora-user-images\image-20210118194308883.png)
+由于不同JupyterLab镜像的工作环境不同，需要在使用前拉取对应工作环境的镜像。
 
 新建的Notebook文件将呈现在左侧菜单栏中。
 
@@ -54,10 +52,6 @@ JupyterLab是一个交互式的开发环境，是Jupyter Notebook的下一代产
 Console的本质为Python终端，输入一条语句就会给出相应的输出，类似于Python原生的IDE。
 
 进入JupyterLab主页后，可在“Console”区域下，选择适用的AI引擎，单击后将新建一个对应框架的Notebook文件。
-
-由于每个Notebook实例选择的工作环境不同，其支持的AI框架也不同，下图仅为示例，请根据实际显示界面选择AI框架。
-
-![点击放大](C:\Users\22952\AppData\Roaming\Typora\typora-user-images\image-20210118194440103.png)
 
 文件创建成功后，将直接呈现Console页面。
 
