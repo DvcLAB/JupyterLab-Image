@@ -32,6 +32,14 @@ DvcLAB的JupyterLab镜像基于开源的JupyterLab，提供在线的交互式开
 | --------------- | ------------------ | -------- |
 | TensorFlow2.2.0 | CPU/GPU            | CPU/GPU  |
 | Pytorch1.6 | CPU/GPU            | CPU/GPU  |
+
+### 项目\数据集列表
+| **项目名称**      | **对应bucket的名称** | **项目地址**                                  | **说明**                                   |
+| ----------------- | -------------------- | --------------------------------------------- | ------------------------------------------ |
+| CNN               | mnist                | https://github.com/DvcLAB/CNN                 | 使用CNN网络对mnist数据集的衣服进行分类     |
+| covid19_detection | covid19              | https://github.com/linstein/covid19_detection | 使用CNN网络检测CT肺部图片判断是否为covid19 |
+| container_test    | demo                 | https://github.com/DvcLAB/container_test      | 使用word2vector进行新闻分类                |
+
 ## JupyterLab容器运行方式
 
 ### docker/docker-compose安装
