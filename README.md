@@ -33,12 +33,21 @@ DvcLAB的JupyterLab镜像基于开源的JupyterLab，提供在线的交互式开
 | TensorFlow2.2.0 | CPU/GPU            | CPU/GPU  |
 | Pytorch1.6 | CPU/GPU            | CPU/GPU  |
 
-### 项目\数据集列表
-| **项目名称**      | **对应bucket的名称** | **项目地址**                                  | **说明**                                   |
-| ----------------- | -------------------- | --------------------------------------------- | ------------------------------------------ |
-| CNN               | mnist                | https://github.com/DvcLAB/CNN                 | 使用CNN网络对mnist数据集的衣服进行分类     |
-| covid19_detection | covid19              | https://github.com/linstein/covid19_detection | 使用CNN网络检测CT肺部图片判断是否为covid19 |
-| container_test    | demo                 | https://github.com/DvcLAB/container_test      | 使用word2vector进行新闻分类                |
+### 项目列表
+
+| **项目名称**         | **对应bucket的名称** | **项目地址**                                      | **说明**                                |
+| ------------------- | -------------------- | ------------------------------------------------- | --------------------------------------- |
+| CNN                 | mnist                | https://github.com/DvcLAB/CNN                     | 使用CNN网络对mnist数据集的衣服进行分类  |
+| pneumonia_detection | chest-xray           | https://github.com/DvcLAB/pneumonia-detection.git | 使用CNN网络检测CT肺部图片判断是否为肺炎 |
+| container_test      | demo                 | https://github.com/DvcLAB/container_test          | 使用word2vector进行新闻分类             |
+
+### 数据集列表
+
+| **数据集名称** | **数据集地址**                   | **数据类型** | **说明**                   |
+| -------------- | -------------------------------- | ------------ | -------------------------- |
+| mnist          | https://s3.dvclab.com/minist     | .gz类型      | mnist数据集                |
+| chest-xray     | https://s3.dvclab.com/chest-xray | 图片         | 肺炎和正常人肺部的CT图片   |
+| demo           | https://s3.dvclab.com/demo       | 文本         | 包含十种新闻类型的新浪新闻 |
 
 ## JupyterLab容器运行方式
 
